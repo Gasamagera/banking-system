@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Bank System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+<!-- Login/Sign Up Modal -->
+<div id="auth-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="close-btn">&times;</span>
+
+    <!-- Tabs -->
+    <div class="auth-tabs">
+      <button id="login-tab" class="active">Login</button>
+      <button id="signup-tab">Sign Up</button>
+    </div>
+
+    <!-- Login Form -->
+   <form id="login-form" class="auth-form" action="login.php" method="POST">
+  <h2>Login</h2>
+  <input type="text" name="username" placeholder="Username" required />
+  <input type="password" name="password" placeholder="Password" required />
+  <button type="submit">Login</button>
+</form>
+
+
+    <!-- Sign Up Form -->
+    <form id="signup-form" class="auth-form hidden" action="register.php" method="POST">
+  <h2>Sign Up</h2>
+  <input type="text" name="full_name" placeholder="Full Names" required />
+  <input type="text" name="username" placeholder="Username" required />
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="tel" name="telephone" placeholder="Telephone" required />
+  <input type="text" name="address" placeholder="Address" required />
+  <input type="password" name="password" placeholder="Password" required />
+  <button type="submit">Create Account</button>
+</form>
+
+  </div>
+</div>
+
+
+    <header>
+      <nav class="navbar">
+        <div class="logo">MyBank</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+         <li><a href="#" class="login-btn">Login</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to MyBank</h1>
+      <p>Your trusted partner for simple and secure banking.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+<!-- About Section -->
+<section id="about" class="content-section">
+  <h2>About Us</h2>
+  <p>
+    MyBank is committed to providing a simple and secure banking experience. Our team is made up of experienced professionals dedicated to helping you manage your finances efficiently.
+  </p>
+<div class="card-container">
+  <!-- Card 1 -->
+  <div class="card">
+    <img src="imeges/staff1.jpeg" alt="John Doe">
+    <h3>IRADUKUNDA Prince</h3>
+    <p>CEO & Founder</p>
+    <p>PRINCE brings over 15 years of banking experience and a passion for innovation.</p>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <img src="imeges/staff2.jpeg" alt="Jane Smith">
+    <h3>RUGAMBA Stiven</h3>
+    <p>Chief Technology Officer</p>
+    <p>RUGAMBA leads our tech team in building secure and scalable systems.</p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <img src="imeges/staff3.jpeg" alt="Michael Lee">
+    <h3>Michael Lee</h3>
+    <p>Head of Customer Service</p>
+    <p>Michael ensures every client has a smooth and satisfying experience.</p>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="card">
+    <img src="imeges/staff4.jpeg" alt="Emily Brown">
+    <h3>Emily Brown</h3>
+    <p>Finance Manager</p>
+    <p>Emily is responsible for overseeing financial operations and planning.</p>
+  </div>
+</div>
+
+</section>
+<section id="contact" class="content-section">
+  <h2>Get in Touch</h2>
+  <p>
+    Whether you have a question about our services, need help with your account, or just want to speak to a team member — we’re here for you.
+  </p>
+
+  <div class="contact-boxes">
+    <div class="contact-box">
+      <h3>Email Us</h3>
+      <p>Send us your inquiries anytime at</p>
+      <p><a href="mailto:support@mybank.com">support@mybank.com</a></p>
+    </div>
+
+    <div class="contact-box">
+      <h3>Call Us</h3>
+      <p>Our support team is available</p>
+      <p>Mon - Fri: 8:00 AM – 6:00 PM</p>
+      <p><a href="tel:+1234567890">+250 (781) 545-61</a></p>
+    </div>
+
+    <div class="contact-box">
+      <h3>Visit Us</h3>
+      <p>123 Kagugu Avenue</p>
+      <p>Kigali, Rwanda</p>
+    </div>
+  </div>
+
+  <p style="margin-top: 30px;">
+    We aim to respond to all messages within 24 hours. Thank you for trusting MyBank.
+  </p>
+</section>
+
+
+</main>
+
+    <footer>
+      <p>&copy; 2025 MyBank. All rights reserved.</p>
+    </footer>
+    <script src="auth-modal.js"></script>
+</body>
+
+  </body>
+</html>

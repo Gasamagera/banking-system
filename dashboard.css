@@ -1,0 +1,124 @@
+/* dashboard.css */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.balance {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.balance span {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.actions form {
+  display: inline;
+}
+
+button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #0d47a1;
+}
+
+.logout {
+  background-color: #e53935;
+}
+
+.logout:hover {
+  background-color: #b71c1c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f9f9f9;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+table th {
+  background-color: #1976d2;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.button,
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button:hover,
+button:hover {
+  background-color: #0056b3;
+}
+.amount.deposit {
+  color: green;
+  font-weight: bold;
+}
+
+.amount.withdrawal {
+  color: red;
+  font-weight: bold;
+}
+.logout-btn {
+  display: inline-block;
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
